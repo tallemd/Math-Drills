@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="Math_Drills.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Math_Drills"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid FocusVisualPrimaryBrush="Black">
+        <TextBox x:Name="MathAnswer" Text="Answer" TextWrapping="Wrap" FontSize="72" Margin="604,9,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="144" Width="331" KeyDown="AnswerKeyDown" FontFamily="Comic Sans MS"/>
+        <TextBlock x:Name="MathQuestion" HorizontalAlignment="Left" Margin="10,10,0,0" Text="Question" TextWrapping="Wrap" VerticalAlignment="Top" Height="296" Width="521" FontSize="72" FontFamily="Comic Sans MS" Tapped="MathQuestion_Tapped"/>
+        <ComboBox x:Name="Operation" Margin="10,339,0,0" Width="525" FontSize="72" FontFamily="Comic Sans MS"/>
+        <Button x:Name="Start" Content="Start" Margin="604,338,0,0" VerticalAlignment="Top" FontSize="72" Width="331" Click="Start_Click" FontFamily="Comic Sans MS"/>
+        <CheckBox x:Name="Fast" Content="Fast" Margin="604,192,0,0" VerticalAlignment="Top" FontSize="72" FontFamily="Comic Sans MS"/>
+        <MediaElement x:Name="Media" Height="100" Width="100"/>
+        <ProgressBar x:Name="Progress" Height="100" Width="100" Margin="835,198,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+
+    </Grid>
+</Page>
